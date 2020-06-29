@@ -310,7 +310,7 @@ body {
 
     .main-container {
         display: grid;
-        grid-template: repeat(4, 1fr)/ 100%;
+        grid-template: repeat(3, 1fr)/ 100%;
         grid-gap: 5px;
         width: 375px;
         height: 812px;
@@ -354,6 +354,7 @@ body {
     .main-container .central-container .header .menu a {
     grid-row-start: 1;
     }
+
 
     .main-container .central-container .product-container .image-container {
         grid-row-start: 1;
@@ -402,6 +403,10 @@ body {
         text-align: center;
     }
     
-
+    .main-container .central-container .product-container .card-item .card-features .features-item {
+        grid-template: repeat(3, 1fr)/ 50% 50%;
+        width: auto;
+    }
+    
 
 }
