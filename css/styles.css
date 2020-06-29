@@ -246,7 +246,7 @@ body {
 .main-container .central-container .product-container .image-container .arrow-item .left-arrow {
     width: 30px;
     height: 30px;
-    background-image: url(/assets/left.svg);
+    background-image: url(./assets/left.svg);
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: center;
@@ -255,7 +255,7 @@ body {
 .main-container .central-container .product-container .image-container .arrow-item .right-arrow {
     width: 30px;
     height: 30px;
-    background-image: url(/assets/right.svg);
+    background-image: url(./assets/right.svg);
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: center;
@@ -336,7 +336,7 @@ body {
     .main-container .central-container .header .icons-conter .left-arrow {
         width: 30px;
         height: 30px;
-        background-image: url(/assets/left.svg);
+        background-image: url(./assets/left.svg);
         background-size: 20px;
         background-repeat: no-repeat;
         background-position: center;
