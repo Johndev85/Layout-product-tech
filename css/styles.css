@@ -78,6 +78,10 @@ body {
     cursor: pointer;
 }
 
+/* <-------------------------------------------------------------------------------------------------->
+                                            CENTRAL CONTAINER
+<--------------------------------------------------------------------------------------------------> */
+
 .main-container .central-container .header .icons-conter {
     display: none;
 }
@@ -95,6 +99,11 @@ body {
     display: none;
 }
 
+.main-container .central-container .header .menu {
+    display: flex;
+    align-items: center;
+}
+
 .main-container .central-container .header .menu a {
     padding: 0 10px;
     text-decoration: none;
@@ -107,7 +116,9 @@ body {
 }
 
 .main-container .central-container .header .menu .cart-icon {
-    width: 20px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .main-container .central-container .header .menu img {
@@ -118,7 +129,6 @@ body {
     display: grid;
     grid-template: 1fr / 1fr 1fr;
 }
-
 
 .main-container .central-container .product-container .card-item {
     display: flex;
@@ -243,11 +253,15 @@ body {
     border: 1px solid var(--color-bg-primary);
 }
 
+.main-container .central-container .product-container .image-container .point-conter {
+    display: none;
+}
+
+
 .main-container .central-container .product-container .image-container .arrow-item .left-arrow {
     width: 30px;
     height: 30px;
-    background-image: url(./assets/left.svg);
-    background-size: 20px;
+    background-image: url(https://img.icons8.com/small/16/000000/long-arrow-left.png);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -255,8 +269,7 @@ body {
 .main-container .central-container .product-container .image-container .arrow-item .right-arrow {
     width: 30px;
     height: 30px;
-    background-image: url(./assets/right.svg);
-    background-size: 20px;
+    background-image: url(https://img.icons8.com/small/16/000000/right.png);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -276,6 +289,10 @@ body {
 
     .main-container .central-container .product-container .image-container {
         grid-row-start: 1;
+    }
+
+    .main-container .central-container .product-container .image-container .point-conter {
+        display: none;
     }
 
     .main-container .central-container .product-container .card-item {
@@ -305,7 +322,6 @@ body {
         position: initial;
         width: 375px;
         height: 812px;
-
     }
 
     .main-container {
@@ -319,6 +335,7 @@ body {
     .main-container .central-container .header .minilogo {
         display: inline-block;
         width: 120px;
+        cursor: pointer;
     }
 
 
@@ -328,21 +345,24 @@ body {
 
     .main-container .central-container .header .icons-conter {
         display: flex;
+        position: relative;
         justify-content: space-around;
         align-items: center;
         padding: 0 15px;
     }
 
     .main-container .central-container .header .icons-conter .left-arrow {
+        position: absolute;
+        right: 220px;
         width: 30px;
         height: 30px;
-        background-image: url(./assets/left.svg);
+        background-image: url(/assets/left.svg);
         background-size: 20px;
         background-repeat: no-repeat;
         background-position: center;
         border: none;
         background-color: white;
-        margin-right: 40px;
+        cursor: pointer;
     }
 
 
@@ -352,30 +372,49 @@ body {
     }
 
     .main-container .central-container .header .menu a {
-    grid-row-start: 1;
+        grid-row-start: 1;
+        position: absolute;
+        left: 320px;
     }
 
+    .main-container .central-container .product-container {
+        grid-template: 1fr / 1fr;
+    }
 
     .main-container .central-container .product-container .image-container {
         grid-row-start: 1;
-        align-items: first baseline;
+        justify-content: space-evenly;
+        height: 400px;
+    }
+
+    .main-container .central-container .product-container .image-container .point-conter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .main-container .central-container .product-container .image-container .point-conter img {
+        width: 100px;
+        cursor: pointer;
     }
 
     .main-container .central-container .product-container .image-container .top-image {
-        width: auto;
+        width: 100%;
+        height: 55%;
     }
 
 
     .main-container .central-container .product-container .image-container .top-image .internal-bg {
       border: none;
     }
-    
+
     .main-container .central-container .product-container .image-container .top-image img {
         position: relative;
         top: 10px;
         width: 25em;
     }
-    
+
     .main-container .central-container .product-container .image-container .arrow-item {
         display: none;
     }
@@ -402,11 +441,28 @@ body {
     .main-container .central-container .product-container .card-item .price-item {
         text-align: center;
     }
-    
+
     .main-container .central-container .product-container .card-item .card-features .features-item {
         grid-template: repeat(3, 1fr)/ 50% 50%;
         width: auto;
     }
+
+    .main-container .central-container .product-container .card-item .card-btn button {
+        width: 255px;
+        height: 40px;
+    }
+
+
+    .main-container .central-container .botton-conter {
+        display: flex;
+        justify-content: center;
+    }
     
+    .main-container .central-container .botton-conter .bottom-line {
+        width: 90px;
+        margin: 0 0 20px 0;
+        border-bottom: 3px solid black;
+    }
+
 
 }
