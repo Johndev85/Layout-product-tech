@@ -282,6 +282,10 @@ body {
 
 @media screen and (max-width:768px) {
 
+    .main-container .central-container {
+        width: 100%;
+    }
+
     .main-container .central-container .product-container {
         display: grid;
         grid-template: 1fr 1fr / 1fr;
@@ -356,7 +360,7 @@ body {
         right: 220px;
         width: 30px;
         height: 30px;
-        background-image: url(./assets/left.svg);
+        background-image: url(../assets/left.svg);
         background-size: 20px;
         background-repeat: no-repeat;
         background-position: center;
@@ -443,8 +447,13 @@ body {
     }
 
     .main-container .central-container .product-container .card-item .card-features .features-item {
-        grid-template: repeat(3, 1fr)/ 50% 50%;
+        display: flex;
+        overflow-y: scroll;
         width: auto;
+    }
+
+    .main-container .central-container .product-container .card-item .card-features .features-item span {
+        height: 85px;
     }
 
     .main-container .central-container .product-container .card-item .card-btn button {
@@ -457,7 +466,7 @@ body {
         display: flex;
         justify-content: center;
     }
-    
+
     .main-container .central-container .botton-conter .bottom-line {
         width: 90px;
         margin: 0 0 20px 0;
